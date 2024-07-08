@@ -12,7 +12,7 @@ function Resetpassword() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         
-        const response = await fetch(`https://jwtauth-production-160c.up.railway.app/auth/resetpassword/?${token}`, {
+        const response = await fetch(`https://jwtauth-production-aa84.up.railway.app/auth/resetpassword/?${token}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

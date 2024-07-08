@@ -14,7 +14,7 @@ const Signup = () => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch('https://jwtauth-production-160c.up.railway.app/auth/signup', {
+        const response = await fetch('https://jwtauth-production-aa84.up.railway.app/auth/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
