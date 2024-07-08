@@ -1,0 +1,51 @@
+/* src/resetpass.css */
+.forget-password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.forget-password-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+}
+
+.button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: linear-gradient(to right, #0abcf9, #f9d423);
+    border-radius: 30px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+  
+button:hover {
+    opacity: 0.9;
+}
+.message {
+    margin-top: 15px;
+    color: green;
+}

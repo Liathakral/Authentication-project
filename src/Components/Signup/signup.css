@@ -1,0 +1,93 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: #1c1c1c;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: linear-gradient(to right, #0abcf9, #f9d423);
+    border-radius: 30px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.form-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+.login-form::before,
+.login-form::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to top, #3cffd9, transparent);
+}
+
+.login-form::before {
+    top: 0;
+    left: -10px;
+}
+
+.login-form::after {
+    top: 0;
+    right: -10px;
+    background: linear-gradient(to bottom, #f9d423, transparent);
+}
