@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import './signup.css'
 import { useNavigate } from 'react-router-dom';
 
-const presetRoles = ['Buyer', 'Tenant', 'Owner', 'User', 'Admin', 'Content Creator'];
+//  const presetRoles = ['Buyer', 'Tenant', 'Owner', 'User', 'Admin', 'Content Creator'];
 
 const Signup = () => {
     const navigate = useNavigate();
@@ -10,16 +10,16 @@ const Signup = () => {
     const [password, setPassword] = useState('');
     const [message, setMessage] = useState('');
     const [name , setname ] = useState('');
-    const [role, setRole] = useState(presetRoles[0]);
+    // const [role, setRole] = useState(presetRoles[0]);
     const handleSubmit = async (event) => {
       event.preventDefault();
       try {
-        const response = await fetch('https://jwtauth-production-aa84.up.railway.app/auth/signup', {
+        const response = await fetch('http://localhost:3000/auth/signup', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({name,email, password ,role}),
+          body: JSON.stringify({name,email, password }),
         });
   
         const data = await response.json();
@@ -70,7 +70,7 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)} 
             />
           </div>
-          <div className="form-group">
+          {/* <div className="form-group">
                     <select value={role} onChange={(e) => setRole(e.target.value)}>
                         {presetRoles.map((presetRole) => (
                             <option key={presetRole} value={presetRole}>
@@ -78,7 +78,7 @@ const Signup = () => {
                             </option>
                         ))}
                     </select>
-                </div>
+                </div> */}
           <button type="submit">Register</button>
           {message && <p>{message}</p>}
           <div className="form-links">

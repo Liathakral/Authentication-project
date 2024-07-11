@@ -15,8 +15,8 @@ function App() {
           <Route exact path="/" element={<Signup />} />
           <Route exact path="/login" element={<Login />} />
           <Route path="/forget-password" element={<ForgetPassword />} />
-          <Route path="/reset-password:token" element={<ResetPassword />} /> {/* Parameterized route */}
-        </Routes>
+          <Route path="/reset-password/:token" element={<ResetPassword />} />
+          </Routes>
       </Router>
     </div>
   );

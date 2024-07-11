@@ -12,7 +12,7 @@ function Resetpassword() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         
-        const response = await fetch(`https://jwtauth-production-aa84.up.railway.app/auth/resetpassword/?${token}`, {
+        const response = await fetch(`http://localhost:3000/auth/resetpassword/?${token}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -50,3 +50,4 @@ function Resetpassword() {
 }
 
 export default Resetpassword;
+//http://localhost:3000/auth/resetpassword?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjhiNmU0MTBiNTkzYzUyMTk5Y2Y0ZTMiLCJpYXQiOjE3MjA2NzQwNTgsImV4cCI6MTcyMDY3NzY1OH0.KZZ8bCe5p0XCu-otWmrQH4JOwTOaMY-dl-6zi2P96ug

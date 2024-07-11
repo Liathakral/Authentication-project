@@ -10,7 +10,7 @@ function ForgetPassword() {
         event.preventDefault();
         console.log('Email:', email);
 
-        const response = await fetch('https://jwtauth-production-aa84.up.railway.app/auth/forgetpassword', {
+        const response = await fetch('http://localhost:3000/auth/forgetpassword', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
